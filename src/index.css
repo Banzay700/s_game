@@ -1,3 +1,42 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './fonts/fonts.css';
+
+:root {
+  /* Основні кольори */
+  --color-primary: #2563eb;
+  --color-accent: #fdd400;
+
+  --color-background: #3f54f5;
+  --color-background-blue: #283598;
+  --color-background-black: #000207;
+  --color-background-white: #f8fafc;
+
+  --color-border-blue: #0c8ce9;
+
+  --color-text-white: #ffffff;
+  --color-text-black: #000000;
+  --color-text-gray: #808ba6;
+  --color-text-accent: #fdd400;
+  --color-text-btn: #ffffff;
+
+  --font-family-primary: 'Qanelas', sans-serif;
+  --font-family-secondary: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text-white);
+  /* background-color: var(--color-background); */
+}

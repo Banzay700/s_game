@@ -1,0 +1,80 @@
+.button {
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  color: var(--color-text-btn);
+  border: none;
+
+  background-image: url('/src/assets/button.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease;
+}
+.btnMedium {
+  height: 76px;
+  width: 318px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 4px;
+  padding: 20px 0 20px 0;
+  border-radius: 10px;
+}
+.btnLarge {
+  width: 454px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 4px;
+  padding: 37px 0 39px 0;
+  border-radius: 15px;
+}
+
+.button:active {
+  filter: brightness(1.1);
+  transform: translate(-50%, -50%) scale(0.98);
+}
+
+.container {
+  position: relative;
+  background-color: var(--color-background-black);
+  padding: 13px;
+  overflow: hidden;
+}
+.containerMedium {
+  width: 342px;
+  height: 98px;
+  border-radius: 20px;
+}
+.containerLarge {
+  width: 480px;
+  height: 140px;
+  border-radius: 26px;
+}
+
+.container:before {
+  overflow: hidden;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #0e2c79, #476ac9);
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+.containerLarge:before {
+  border-radius: 26px;
+  padding: 6px;
+}
+.containerMedium:before {
+  border-radius: 20px;
+  padding: 6px;
+}

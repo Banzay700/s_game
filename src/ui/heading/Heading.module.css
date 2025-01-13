@@ -1,0 +1,36 @@
+.heading {
+  font-family: var(--font-family-secondary);
+}
+
+.h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+.h2 {
+  font-size: 64px;
+  font-weight: 600;
+}
+.h3 {
+  font-size: 56px;
+  font-weight: 700;
+}
+.numbers {
+  font-family: var(--font-family-secondary);
+  font-size: 120px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.white {
+  color: var(--color-text-white);
+}
+.gray {
+  color: var(--color-text-gray);
+}
+.accent {
+  color: var(--color-text-accent);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
